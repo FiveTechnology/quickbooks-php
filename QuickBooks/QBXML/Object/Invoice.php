@@ -91,7 +91,17 @@ class QuickBooks_QBXML_Object_Invoice extends QuickBooks_QBXML_Object
 	{
 		return $this->get('TxnID');
 	}
-	
+
+	/*
+	 * Get the subtotal
+	 *
+	 * @return string
+	 */
+	public function getSubtotal()
+	{
+		return $this->get('Subtotal');
+	}
+
 	/**
 	 * Set the customer ListID
 	 * 
